@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/poll_layout_relative"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeight"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/poll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:gravity="start"
+        android:text="@string/prompt_item_poll_title"
+        android:textColor="@color/primary_black_text"
+        android:textSize="@dimen/subhead_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/poll_title"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/poll_creator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="3dp"
+            android:maxLines="1"
+            android:gravity="start"
+            android:text="@string/prompt_item_poll_creator"
+            android:textColor="@color/secondary_black_text"
+            android:textSize="@dimen/caption_text" />
+
+        <TextView
+            android:id="@+id/poll_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="3dp"
+            android:maxLines="1"
+            android:gravity="center_horizontal"
+            android:text="@string/prompt_item_poll_mode"
+            android:textColor="@color/secondary_black_text"
+            android:textSize="@dimen/caption_text" />
+
+        <TextView
+            android:id="@+id/poll_expiration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="3dp"
+            android:maxLines="1"
+            android:gravity="end"
+            android:text="@string/prompt_item_poll_expiration"
+            android:textColor="@color/secondary_black_text"
+            android:textSize="@dimen/caption_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>

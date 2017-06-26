@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_invite"
+        android:icon="@drawable/ic_action_invite"
+        android:title="@string/toolbar_item_invite"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item_chart_pie"
+        android:icon="@drawable/ic_appbar_chart_pie"
+        android:title="@string/toolbar_item_pie_chart"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_chart_bar"
+        android:icon="@drawable/ic_appbar_chart_bar"
+        android:title="@string/toolbar_item_bar_chart"
+        app:showAsAction="ifRoom" />
+
+</menu>

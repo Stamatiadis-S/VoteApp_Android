@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pug.voteapp_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/title_activity_authenticate"
+            android:noHistory="true" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:noHistory="true" />
+        <activity
+            android:name=".activities.FriendlistsActivity"
+            android:label="@string/title_activity_friendlist"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pug.voteapp_android.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PollDetailsActivity"
+            android:label="@string/title_activity_poll_details" />
+        <activity
+            android:name=".activities.PollCreationActivity"
+            android:label="@string/title_activity_poll_creation" />
+        <activity
+            android:name=".activities.PollInvitationActivity"
+            android:label="@string/title_activity_poll_invitation"
+            android:parentActivityName=".activities.PollDetailsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pug.voteapp_android.activities.PollDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PieChartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_pie_chart"
+            android:parentActivityName=".activities.PollDetailsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pug.voteapp_android.activities.PollDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.BarChartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_bar_chart"
+            android:parentActivityName=".activities.PollDetailsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.pug.voteapp_android.activities.PollDetailsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings">
+        </activity>
+    </application>
+
+</manifest>

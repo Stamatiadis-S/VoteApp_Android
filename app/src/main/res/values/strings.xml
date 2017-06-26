@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">VoteApp</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_authenticate">Authenticate</string>
+    <string name="title_activity_poll_details">Poll Details</string>
+    <string name="title_activity_poll_creation">New Poll</string>
+    <string name="title_activity_poll_invitation">Invite </string>
+    <string name="title_activity_pie_chart">Pie Chart</string>
+    <string name="title_activity_bar_chart">Bar Chart</string>
+    <string name="title_activity_friendlist">Friendlists</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_repeat">Repeat Password</string>
+    <string name="prompt_signup">Haven\'t registered yet? Click here.</string>
+    <string name="prompt_login">Already a member? Click here to login.</string>
+    <string name="prompt_content">Poll content</string>
+    <string name="prompt_visibility">Select poll visibility:</string>
+    <string name="prompt_expiration">Select poll duration:</string>
+    <string name="prompt_type">Select poll mode:</string>
+    <string name="prompt_option">Option</string>
+    <string name="prompt_invite_single">Invite a single user:</string>
+    <string name="prompt_invite_multiple">Invite multiple users at once from your saved lists:</string>
+    <string name="prompt_friendlist_name">Friendlist Name</string>
+    <string name="prompt_item_poll_title">Poll Title</string>
+    <string name="prompt_item_poll_creator">By: Username</string>
+    <string name="prompt_item_poll_mode">Mode:</string>
+    <string name="prompt_item_poll_expiration">Expires on: Date</string>
+    <string name="prompt_server_url">VoteApp Server IP</string>
+    <string name="notify_settings_saved">Settings saved</string>
+    <string name="notify_friendlist_saved">Saved</string>
+    <string name="notify_friendlist_deleted">Deleted</string>
+    <string name="action_log_in_short">Log in</string>
+    <string name="action_signup_short">Sign up</string>
+    <string name="action_invite_single">Invite</string>
+    <string name="action_invite_multiple">Invite list</string>
+    <string name="action_friendlists_new">Create New</string>
+    <string name="action_friendlists_edit">Edit</string>
+    <string name="action_friendlists_delete">Delete friendlist</string>
+    <string name="error_invalid_email">This email address is invalid.</string>
+    <string name="error_invalid_username">This username is invalid.</string>
+    <string name="error_invalid_password">This password is invalid.</string>
+    <string name="error_incorrect_password">This password is incorrect.</string>
+    <string name="error_incorrect_password_repeat">Password is not the same.</string>
+    <string name="error_field_required">This field is required.</string>
+    <string name="error_used_email">Email is already in use.</string>
+    <string name="error_used_username">Username is already in use.</string>
+    <string name="error_invalid_credentials">Follow the credential rules.</string>
+    <string name="error_invalid_question">Question needs to be between 10–250 characters.</string>
+    <string name="error_invalid_option">Option needs to be between 1–100 characters.</string>
+    <string-array name="visibility_options">
+        <item>Public</item>
+        <item>Private</item>
+    </string-array>
+    <string-array name="expiration_options">
+        <item>1</item>
+        <item>7</item>
+        <item>30</item>
+
+    </string-array>
+    <string-array name="type_options">
+        <item>Single</item>
+        <item>Multiple</item>
+    </string-array>
+    <string name="menu_item_manage_users">Manage Friendlists</string>
+    <string name="menu_item_settings">Settings</string>
+    <string name="menu_item_logout">Log out</string>
+    <string name="toolbar_item_pie_chart">Pie Chart</string>
+    <string name="toolbar_item_bar_chart">Bar Chart</string>
+    <string name="toolbar_item_invite">Invitations</string>
+    <string name="network_problem">Network error! Cannot reach server.</string>
+    <string name="network_badrequest">Something is wrong with the app or the server. Please contact the developer.</string>
+    <string name="network_login_success">Successful login!</string>
+    <string name="network_login_unauthorized">Wrong username/password combination.</string>
+    <string name="network_registration_success">Successful registration!</string>
+    <string name="network_registration_failed">Registration failed.</string>
+    <string name="network_poll_creation_success">Poll created!</string>
+    <string name="network_poll_creation_failure">Failed to create poll!</string>
+    <string name="network_participation_creation_success">User is now part of the poll.</string>
+    <string name="network_participation_creation_failure_expiration">The poll has already expired!</string>
+    <string name="network_participation_creation_failure_conflict">User has already participated!</string>
+    <string name="network_vote_creation_success">Successful vote!</string>
+    <string name="network_vote_creation_failure">Failed to vote!</string>
+    <string name="network_vote_creation_failure_expiration">The poll has already expired!</string>
+    <string name="network_vote_creation_failure_conflict">You have already voted!</string>
+    <string name="network_invalid_token">Invalid token! Please log out and try again.</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+</resources>
